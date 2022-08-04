@@ -85,3 +85,10 @@ curl -d 'action=showdown&game_state={
   "in_action":0
 }' http://localhost:1337/
 ```
+
+```shell
+curl -X POST -H --silent \
+  --data-urlencode "action=bet_request" \
+  --data-urlencode "game_state=$(cat state.json)" \
+  http://localhost:1337/
+```

@@ -20,7 +20,7 @@ app.post('/', (req, res) => {
   } else if (req.body.action === 'version') {
     res.status(200).send(VERSION)
   } else {
-    res.status(200).send('OK')
+    res.status(404).send('Not Found')
   }
 })
 
